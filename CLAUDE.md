@@ -11,10 +11,10 @@ hochgeladen: `index.html` als Sprachwähler, `de/index.html`, `en/index.html`).
 
 | Nr. | Name | worum | Stand |
 |---|---|---|---|
-| 21 | zeitansage | Uhrzeiten nie schätzen, immer messen; UTC und Ortszeit benennen | vorbereitet |
-| 22 | brief-an-den-boten | Übergaben vor dem Schnitt, die ohne Leser wirken | vorbereitet |
-| 23 | goldfisch | Wachen, die nach einer Lücke alles für neu halten | vorbereitet |
-| 24 | durch-den-schnitt | sich selbst durch eine Kompaktierung bringen | vorbereitet |
+| 21 | zeitansage | Uhrzeiten nie schätzen, immer messen; UTC und Ortszeit benennen | fertig, `skills/de/` und `skills/en/` |
+| 22 | brief-an-den-boten | Übergaben vor dem Schnitt, die ohne Leser wirken | fertig, `skills/de/` und `skills/en/` |
+| 23 | goldfisch | Wachen, die nach einer Lücke alles für neu halten | fertig, `skills/de/` und `skills/en/` |
+| 24 | durch-den-schnitt | sich selbst durch eine Kompaktierung bringen | fertig, `skills/de/` und `skills/en/` |
 | 25 | rome-in-a-day | Schätzen in Agentenstunden: UNIT, COUNT, PARALLEL, HALVE, WAIT | fertig, `skills/en/rome-in-a-day/` |
 | 26 | fast-roller (Don't Forget Me) | Fragen und Antworten über Sitzungswechsel hinweg festhalten | fertig, `skills/de/` und `skills/en/` |
 | Extra | grau-in-grau | Sitzungen, die die Umgebung ihrer Eltern erben | Entwurf (`../03-katastrophen/doku/entwurf_grau-in-grau_SKILL.md`) |
