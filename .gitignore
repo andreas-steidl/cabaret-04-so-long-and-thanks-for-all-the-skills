@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 *.vor-*.html
 Thumbs.db
+
+# Druckdateien und hochgerechnete Bilder: nur auf dem NAS und auf Elements, nie nach GitHub
+plakat/druck/
+plakat/*_x2.png
