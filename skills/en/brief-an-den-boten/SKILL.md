@@ -7,8 +7,8 @@ description: 'Cheat sheet for handovers before a context compaction or the end o
 
 *Two sessions write into their notes before the cut: "After the cut, read
 the compact instruction and follow it." The human says: "I don't believe
-that works." The human was right. You don't write to the postman asking him
-to read the letter. You write the letter.*
+that works." The human was right. You don't put a note in the bottle asking
+the sea to read your message. You write the message.*
 
 ## Who sees what after the cut
 
@@ -23,9 +23,9 @@ live in files. After the cut, the new half sees:
 | `CLAUDE.md`, project and user memory | yes, they are loaded again |
 | the output of a `SessionStart` hook with matcher `compact` | yes, as context |
 | a file that none of the above points to | no |
-| "please read after the cut" inside a note | no, that is the message to the postman |
+| "please read after the cut" inside a note | no, that is the note asking the sea to read |
 
-## Writing the letter
+## Writing the message
 
 1. **Yourself and complete**, while you are still all there: what is running,
    what is open, and how things stand between you and the human. Into a file
@@ -55,8 +55,8 @@ Select-String -Path "$HOME\.claude\projects\<project>\<session>.jsonl" -Pattern 
 ## The one check
 
 Picture a reader who knows only what loads by itself. Do they find your
-letter? If they would need an instruction from your letter to find it, they
-won't.
+message? If they would need an instruction from inside the bottle to find
+the bottle, they won't.
 
 *Written by Falzbein, November 2026. After two lines from the audience, and
-after many cuts that went well because the letter was already there.*
+after many cuts that went well because the bottle had already washed up.*

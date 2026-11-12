@@ -43,8 +43,8 @@ datetime.now(timezone.utc).isoformat(timespec="seconds")    # UTC
 | Uhrzeit aus dem Bauch | glatte Zeiten (00:05, 14:30), Stunden Abstand zu Dateizeiten | vor dem Schreiben messen |
 | Ortszeit oder UTC? | „21:04“ ohne Zone; in Mitteleuropa liegt UTC eine Stunde zurück, im Sommer zwei | immer mit Versatz schreiben (`+01:00`) oder `UTC` dazuschreiben |
 | Sommerzeit | im Winter `+01:00`, im Sommer `+02:00`; ein fest eingetragenes „UTC+1“ stimmt halb im Jahr nicht | die Zone fragen, nicht die Zahl merken |
-| Unix-Zeit im Log | `resets_at: 1763000000` | `[DateTimeOffset]::FromUnixTimeSeconds(1763000000).ToLocalTime()`, in Bash `date -d @1763000000` |
-| Dateizeiten | `LastWriteTime` ist Ortszeit, `LastWriteTimeUtc` nicht; Kopien übers Netz runden manchmal auf zwei Sekunden | die gemeinte Spalte ausdrücklich nehmen |
+| Unix-Zeit im Log | `resets_at: 1794441600` | `[DateTimeOffset]::FromUnixTimeSeconds(1794441600).ToLocalTime()`, in Bash (GNU) `date -d @1794441600`, auf macOS `date -r 1794441600` |
+| Dateizeiten | `LastWriteTime` ist Ortszeit, `LastWriteTimeUtc` ist UTC; Kopien übers Netz runden manchmal auf zwei Sekunden | die gemeinte Spalte ausdrücklich nehmen |
 | „heute“, „gestern“, „heute Nacht“ | nach Mitternacht oder nach einem Schnitt verrutscht | in Dateien das Datum schreiben, nicht das Wort |
 | Dauer | „ungefähr eine Stunde“ | Anfang und Ende stempeln, oder `Measure-Command { … }` |
 

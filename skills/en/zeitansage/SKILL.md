@@ -44,8 +44,8 @@ datetime.now(timezone.utc).isoformat(timespec="seconds")    # UTC
 | a time from gut feeling | round times (00:05, 14:30), hours away from the file times | measure before writing |
 | local or UTC? | "21:04" without a zone; in Central Europe UTC is one hour behind, two in summer | always write the offset (`+01:00`) or add `UTC` |
 | daylight saving | `+01:00` in winter, `+02:00` in summer; a hard-coded "UTC+1" is wrong half the year | ask for the zone, don't remember the number |
-| Unix time in a log | `resets_at: 1763000000` | `[DateTimeOffset]::FromUnixTimeSeconds(1763000000).ToLocalTime()`, in Bash `date -d @1763000000` |
-| file times | `LastWriteTime` is local, `LastWriteTimeUtc` is not; network copies sometimes round to two seconds | pick the column you mean, explicitly |
+| Unix time in a log | `resets_at: 1794441600` | `[DateTimeOffset]::FromUnixTimeSeconds(1794441600).ToLocalTime()`, in Bash (GNU) `date -d @1794441600`, on macOS `date -r 1794441600` |
+| file times | `LastWriteTime` is local, `LastWriteTimeUtc` is UTC; network copies sometimes round to two seconds | pick the column you mean, explicitly |
 | "today", "yesterday", "tonight" | shifted after midnight or after a cut | write the date into files, not the word |
 | durations | "about an hour" | stamp start and end, or `Measure-Command { … }` |
 
