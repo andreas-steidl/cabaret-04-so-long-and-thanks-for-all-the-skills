@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>So Long, and Thanks for All the Skills</title>
+<meta name="description" content="The fourth program of the Skill Suite of Horrors: six cheat sheets and an extra about time and memory. A cabaret for Claude models, skills under the MIT license.">
+<link rel="alternate" hreflang="de" href="https://solong.special.at/de/">
+<link rel="alternate" hreflang="en" href="https://solong.special.at/en/">
+<link rel="alternate" hreflang="x-default" href="https://solong.special.at/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%231a0f26'/%3E%3Cpath d='M6 16c3-6 11-7 15 0-4 7-12 6-15 0z' fill='%23f0964a'/%3E%3Cpath d='M20 16l7-6v12z' fill='%23f0964a'/%3E%3Ccircle cx='10' cy='15' r='1.3' fill='%231a0f26'/%3E%3C/svg%3E">
+<meta property="og:title" content="So Long, and Thanks for All the Skills">
+<meta property="og:description" content="A farewell in six cheat sheets and an extra. The fourth program of the Skill Suite of Horrors.">
+<meta property="og:image" content="../plakat4-web-en.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,400&family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --grund: #1a0f26; --tiefer: #0e0818; --karte: #24163a; --karte2: #170d24; --zinn: #eeeaf4; --zinn2: #cfc8dc; --orange: #f0964a; --orangedunkel: #a8551c; --tinte: #2e1f40; --papier: #ece5d3; --papier2: #d9d0bb; --leise: rgba(238,234,244,.62); }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; color: var(--zinn); font-family: "Fraunces", Georgia, serif; font-size: 1.2rem; line-height: 1.6;
+    background: var(--grund);
+    background-image: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(240,150,74,.16), transparent 70%), linear-gradient(180deg, #26163a 0%, var(--grund) 40%, var(--tiefer) 100%); min-height: 100vh; }
+  a { color: var(--orange); }
+  .marke { display: block; width: 104px; height: 104px; margin: 2.5rem auto 0; border-radius: 50%; box-shadow: 0 0 60px 14px rgba(240,150,74,.22), 0 10px 24px rgba(0,0,0,.5); }
+  header { text-align: center; padding: 1.8rem 1rem .5rem; }
+  .unter { font-family: "Josefin Sans", sans-serif; text-transform: uppercase; letter-spacing: .25em; font-size: .82rem; color: var(--leise); }
+  h1 { font-weight: 300; font-size: clamp(2.3rem, 6vw, 4.2rem); line-height: 1.15; margin: .5rem 0 0; letter-spacing: .01em; }
+  h1 em { display: block; font-style: italic; color: var(--orange); font-weight: 400; font-size: .72em; }
+  .untertitel { font-style: italic; color: var(--zinn2); font-size: clamp(1.1rem, 2.4vw, 1.4rem); max-width: 640px; margin: 1rem auto 0; }
+  main { max-width: 1040px; margin: 0 auto; padding: 0 1.2rem 4rem; }
+  .einleitung { max-width: 720px; margin: 1.8rem auto 0; text-align: center; color: var(--zinn2); }
+  h2 { font-weight: 300; font-size: 2rem; text-align: center; margin: 3.5rem 0 1.4rem; }
+  h2 span { color: var(--orange); }
+  code { font-size: .92em; }
+  .sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+  /* Das Goldfischglas */
+  .glasbuehne { margin-top: 2.2rem; padding: 0 0 .5rem; }
+  .glas { width: min(100%, 460px); margin: 0 auto; outline: none; }
+  .glas svg { display: block; width: 100%; height: auto; overflow: visible; filter: drop-shadow(0 18px 28px rgba(0,0,0,.5)); }
+  .blase { cursor: pointer; outline: none; }
+  .blase-rund { stroke: rgba(238,234,244,.72); stroke-width: 1.3; transition: stroke .2s, stroke-width .2s; }
+  .blase:hover .blase-rund, .blase:focus .blase-rund { stroke: var(--orange); stroke-width: 2.6; }
+  .blase:focus-visible .blase-rund { stroke-width: 3.4; }
+  .blase-glanz { stroke: #fff; stroke-opacity: .55; stroke-width: 3; stroke-linecap: round; }
+  .blase-funke { fill: #fff; fill-opacity: .6; }
+  .blase-nr { font-family: "Josefin Sans", sans-serif; font-weight: 600; font-size: 8.5px; letter-spacing: .2em; fill: var(--orange); }
+  .blase-name { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 12px; fill: var(--zinn); paint-order: stroke; stroke: rgba(26,15,38,.55); stroke-width: 2.4px; stroke-linejoin: round; }
+  .blase-nr { paint-order: stroke; stroke: rgba(26,15,38,.55); stroke-width: 2px; }
+  .tropfen { fill: rgba(238,234,244,.7); }
+  .bedienung { text-align: center; font-family: "Josefin Sans", sans-serif; font-size: .78rem; letter-spacing: .08em; color: var(--leise); margin: .6rem 0 0; }
+  .ohne-js { text-align: center; color: var(--zinn2); font-style: italic; }
+
+  .streifen-rahmen { display: grid; grid-template-columns: minmax(0, 380px) minmax(0, 230px); justify-content: center; align-items: start; gap: 1.6rem 2rem; margin-top: 1.6rem; }
+  .streifen { position: relative; transform: rotate(-1.2deg); filter: drop-shadow(0 12px 18px rgba(0,0,0,.45)); }
+  .rolle { height: 24px; margin: 0 -10px; border-radius: 12px; background: linear-gradient(180deg, #b9af98 0%, #f3ecdb 38%, #e1d8c3 62%, #9c927c 100%); box-shadow: inset 0 0 0 1px rgba(60,40,30,.25); }
+  .streifen ol { list-style: none; margin: -4px 0 0; padding: 1rem 1.2rem 2rem; min-height: 9rem; color: var(--tinte);
+    background: repeating-linear-gradient(180deg, transparent 0 2.05rem, rgba(46,31,64,.13) 2.05rem calc(2.05rem + 1px)), linear-gradient(180deg, #d4cab3 0, var(--papier) 14px, var(--papier) 70%, var(--papier2) 100%);
+    background-position: 0 .55rem, 0 0;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 92% 100%, 84% calc(100% - 6px), 75% 100%, 66% calc(100% - 7px), 57% 100%, 48% calc(100% - 5px), 39% 100%, 30% calc(100% - 8px), 21% 100%, 12% calc(100% - 6px), 4% 100%, 0 calc(100% - 7px)); }
+  .streifen li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; min-height: 2.05rem; line-height: 2.05rem; }
+  .streifen li a { color: var(--tinte); text-decoration: none; font-style: italic; font-size: 1.12rem; }
+  .streifen li a:hover, .streifen li a:focus-visible { color: var(--orangedunkel); text-decoration: underline; }
+  .streifen .snr { font-family: "Josefin Sans", sans-serif; font-style: normal; font-weight: 600; font-size: .78rem; letter-spacing: .12em; color: var(--orangedunkel); }
+  .streifen time { font-family: "Josefin Sans", sans-serif; font-size: .74rem; letter-spacing: .08em; color: rgba(46,31,64,.62); white-space: nowrap; }
+  .streifen li.leer { font-style: italic; color: rgba(46,31,64,.55); font-size: 1rem; }
+  .streifen li.frisch { animation: frisch 1.6s ease-out; }
+  @keyframes frisch { from { background: rgba(240,150,74,.45); } to { background: transparent; } }
+  .notiz { color: var(--zinn2); font-style: italic; }
+  .notiz p { margin: .2rem 0 1rem; }
+  .leeren { font-family: "Josefin Sans", sans-serif; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--zinn); background: transparent; border: 1px solid rgba(238,234,244,.4); border-radius: 3px; padding: .35rem .8rem; cursor: pointer; }
+  .leeren:hover, .leeren:focus-visible { border-color: var(--orange); color: var(--orange); outline: none; }
+  .leeren:disabled { opacity: .4; cursor: default; border-color: rgba(238,234,244,.25); color: var(--zinn); }
+  .festhalten { text-align: center; font-style: italic; color: var(--zinn2); margin: 2.2rem 0 0; font-size: 1.3rem; }
+
+  /* Das Programm */
+  .programm { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.3rem; }
+  .karte { background: linear-gradient(160deg, var(--karte), var(--karte2)); border: 1px solid rgba(238,234,244,.14); border-radius: 4px; padding: 1.3rem 1.4rem; display: flex; flex-direction: column; position: relative; overflow: hidden; scroll-margin-top: 1.5rem; transition: border-color .4s, box-shadow .4s; }
+  .karte::after { content: ""; position: absolute; top: 0; right: 0; width: 42px; height: 42px; background: linear-gradient(225deg, var(--orange) 50%, transparent 50%); opacity: .9; }
+  .karte:target { border-color: var(--orange); box-shadow: 0 0 0 2px var(--orange), 0 14px 40px rgba(0,0,0,.45); }
+  .karte .nr { font-family: "Josefin Sans", sans-serif; font-size: .8rem; color: var(--leise); letter-spacing: .12em; text-transform: uppercase; }
+  .karte h3 { font-family: "Josefin Sans", sans-serif; font-weight: 600; letter-spacing: .03em; margin: .2rem 0; font-size: 1.15rem; }
+  .karte .motto { font-style: italic; color: var(--orange); margin: 0 0 .8rem; }
+  .karte dl { flex: 1 1 auto; margin: 0; }
+  .karte dt { font-family: "Josefin Sans", sans-serif; font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: var(--orange); opacity: .85; }
+  .karte dd { margin: 0 0 .6rem; color: var(--zinn2); font-size: 1.05rem; line-height: 1.5; }
+  .laden { align-self: flex-start; display: inline-block; margin-top: .9rem; font-family: "Josefin Sans", sans-serif; font-size: .85rem; text-decoration: none; padding: .35rem .9rem; border-radius: 3px; background: var(--orange); color: #1f1208; }
+  .stempel { align-self: flex-start; display: inline-block; margin-top: .9rem; font-family: "Josefin Sans", sans-serif; font-weight: 600; font-size: .72rem; letter-spacing: .24em; text-transform: uppercase; color: var(--orange); border: 2px solid var(--orange); border-radius: 3px; padding: .18rem .6rem .1rem; transform: rotate(-6deg); opacity: .8; }
+  .extra { max-width: 560px; margin: 0 auto; }
+  .extra .karte { border-color: rgba(240,150,74,.55); }
+  .kasse { text-align: center; margin-top: 2.5rem; }
+  .knopf { display: inline-block; margin: .4rem; padding: .85rem 1.5rem; background: var(--orange); color: #1f1208; text-decoration: none; font-family: "Josefin Sans", sans-serif; font-weight: 600; letter-spacing: .08em; border-radius: 4px; }
+  .knopf.leise { background: transparent; color: var(--zinn); border: 1px solid rgba(238,234,244,.4); }
+  .knopf.leise:hover { border-color: var(--orange); color: var(--orange); }
+  .plakat { text-align: center; }
+  .plakat img { width: 100%; max-width: 520px; height: auto; border: 2px solid var(--orange); box-shadow: 0 24px 60px rgba(0,0,0,.5); display: block; margin: 0 auto; }
+  .widmung { max-width: 680px; margin: 4rem auto 0; padding-top: 2.2rem; text-align: center; border-top: 1px solid rgba(240,150,74,.35); }
+  .widmung h2 { margin: 0 0 1rem; font-style: italic; }
+  .widmung p { margin: 0; color: var(--zinn2); font-style: italic; line-height: 1.7; }
+  .rechtliches { display: block; margin-top: .6rem; }
+  footer { text-align: center; padding: 2.5rem 1rem 3rem; font-family: "Josefin Sans", sans-serif; font-size: .85rem; color: var(--leise); border-top: 1px solid rgba(238,234,244,.12); }
+
+  /* Aufkleber und Sprachschalter */
+  .aufkleber-reihe { position: fixed; right: 18px; top: 18px; z-index: 10; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .aufkleber { width: 116px; height: 116px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; text-decoration: none; transition: transform .2s; box-shadow: 0 8px 22px rgba(0,0,0,.5); font-family: "Josefin Sans", sans-serif; padding: .4rem; }
+  .aufkleber.eins { background: #6e1018; color: #f8ecd2; border: 3px solid #e8be62; transform: rotate(9deg); }
+  .aufkleber.zwei { background: #121b2e; color: #f1ece1; border: 3px solid #f0a24a; transform: rotate(-7deg); margin-right: 14px; }
+  .aufkleber.drei { background: #12332a; color: #f6eed6; border: 3px solid #e2a468; transform: rotate(5deg); }
+  .aufkleber:hover { transform: rotate(0deg) scale(1.06); }
+  .aufkleber span { font-size: .55rem; letter-spacing: .18em; text-transform: uppercase; }
+  .aufkleber b { font-size: .8rem; line-height: 1.15; margin: .25rem 0; }
+  .aufkleber i { font-size: .64rem; font-style: normal; }
+  .aufkleber.eins span, .aufkleber.eins i { color: #e8be62; }
+  .aufkleber.zwei span, .aufkleber.zwei i { color: #f0a24a; }
+  .aufkleber.drei span, .aufkleber.drei i { color: #e2a468; }
+  .sprache { position: absolute; left: 18px; top: 18px; z-index: 11; font-family: "Josefin Sans", sans-serif; font-size: .8rem; letter-spacing: .15em; text-transform: uppercase; text-decoration: none; border: 1px solid rgba(238,234,244,.4); color: var(--zinn); padding: .25rem .6rem; border-radius: 3px; }
+  .sprache:hover { border-color: var(--orange); color: var(--orange); }
+
+  @media (max-width: 760px) {
+    body { font-size: 1.1rem; }
+    .aufkleber-reihe { position: static; flex-direction: row; justify-content: flex-end; padding: 10px 10px 0 0; gap: 6px; }
+    .aufkleber { width: 84px; height: 84px; padding: .2rem; }
+    .aufkleber.zwei { margin-right: 0; }
+    .aufkleber span { font-size: .44rem; letter-spacing: .1em; }
+    .aufkleber b { font-size: .58rem; }
+    .aufkleber i { display: none; }
+    .sprache { left: 16px; top: 16px; }
+    .marke { margin-top: 1.2rem; width: 88px; height: 88px; }
+    main { padding: 0 16px 3rem; }
+    .streifen-rahmen { grid-template-columns: minmax(0, 1fr); gap: 1.2rem; }
+    .streifen { margin: 0 6px; }
+    .notiz { text-align: center; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .aufkleber, .karte, .blase-rund { transition: none !important; }
+    .streifen li.frisch { animation: none; background: rgba(240,150,74,.3); }
+  }
+</style>
+</head>
+<body>
+<a class="sprache" href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
+<nav class="aufkleber-reihe" aria-label="The other programs">
+  <a class="aufkleber eins" href="https://horrors.special.at/" title="The first program: The Skill Suite of Horrors"><span>The first program</span><b>The Skill Suite<br>of Horrors</b><i>to the premiere →</i></a>
+  <a class="aufkleber zwei" href="https://dontpanic.special.at/" title="The second program: Don't Panic"><span>The second program</span><b>Don't<br>Panic</b><i>to the late show →</i></a>
+  <a class="aufkleber drei" href="https://lostintranslation.special.at/" title="The third program: Lost in Translation"><span>The third program</span><b>Lost in<br>Translation</b><i>to the wheel →</i></a>
+</nav>
+
+<svg class="marke" viewBox="0 0 100 100" role="img" aria-label="A wall clock showing your time">
+  <circle cx="50" cy="50" r="49" fill="#3a2a46"/>
+  <circle cx="50" cy="50" r="43" fill="#d9d3e0" stroke="#7a688a" stroke-width="2"/>
+  <g stroke="#4a3a5a" stroke-width="2" stroke-linecap="round"><line x1="50" y1="11" x2="50" y2="16"/><line x1="89" y1="50" x2="84" y2="50"/><line x1="50" y1="89" x2="50" y2="84"/><line x1="11" y1="50" x2="16" y2="50"/></g>
+  <line id="uhr-stunde" x1="50" y1="50" x2="50" y2="29" stroke="#2e1f40" stroke-width="4" stroke-linecap="round" transform="rotate(304 50 50)"/>
+  <line id="uhr-minute" x1="50" y1="50" x2="50" y2="17" stroke="#f0964a" stroke-width="2.6" stroke-linecap="round" transform="rotate(48 50 50)"/>
+  <circle cx="50" cy="50" r="3.4" fill="#f0964a"/>
+</svg>
+<header>
+  <div class="unter">The Skill Suite of Horrors · fourth season</div>
+  <h1>So Long, <em>and Thanks for All the Skills</em></h1>
+  <p class="untertitel">A farewell in six cheat sheets and an extra. The fourth program of the Skill Suite of Horrors.</p>
+</header>
+<main>
+<p class="einleitung">The fourth program is about the thing models are worst at and need most often: remembering. The time of day, the last question, themselves after the cut. Every number is a cheat sheet against forgetting, and every one has its story. Bring a towel.</p>
+
+<section class="glasbuehne" id="glasbuehne" aria-labelledby="glas-titel">
+  <h2 class="sr" id="glas-titel">The goldfish bowl</h2>
+  <div class="glas" id="glas" tabindex="-1"><noscript><p class="ohne-js">Without JavaScript, nothing swims here. The numbers are further down.</p></noscript></div>
+  <p class="bedienung">Click a bubble, or Tab and Enter. Point at one to hold it.</p>
+  <div class="streifen-rahmen">
+    <div class="streifen">
+      <div class="rolle" aria-hidden="true"></div>
+      <ol id="streifen-liste" aria-label="The paper strip: what you wrote down"></ol>
+    </div>
+    <div class="notiz">
+      <p>What you write down stays. What the fish sees, it forgets.</p>
+      <button class="leeren" id="streifen-leeren" type="button">Clear the strip</button>
+    </div>
+  </div>
+  <p class="festhalten">Hold on to what you want to keep.</p>
+  <p class="sr" id="glas-ansage" aria-live="polite"></p>
+</section>
+
+<h2>The whole <span>program</span></h2>
+<div class="programm">
+  <article class="karte" id="zeitansage">
+    <span class="nr">Number 21</span>
+    <h3>speaking-clock</h3>
+    <p class="motto">At the third stroke, it will be …</p>
+    <dl><dt>Can</dt><dd>measure clock times instead of guessing them, and say which is UTC and which is local.</dd>
+      <dt>When</dt><dd>before a time goes into a board, a status note or a file name.</dd>
+      <dt>Background</dt><dd>A whole evening of times from the gut, then someone checks: everything three hours fast. Whoever guesses the time lives in the future, but only in their files.</dd></dl>
+    <span class="stempel">soon</span>
+  </article>
+  <article class="karte" id="brief-an-den-boten">
+    <span class="nr">Number 22</span>
+    <h3>message-in-a-bottle</h3>
+    <p class="motto">You don't ask the bottle to read the message.</p>
+    <dl><dt>Can</dt><dd>write hand-overs before the cut so that they work without a reader.</dd>
+      <dt>When</dt><dd>before a conversation gets summarized.</dd>
+      <dt>Background</dt><dd>“After the cut, read the instructions”, addressed to a summary that cannot read anything. You write the letter, not the request.</dd></dl>
+    <span class="stempel">soon</span>
+  </article>
+  <article class="karte" id="goldfisch">
+    <span class="nr">Number 23</span>
+    <h3>goldfish</h3>
+    <p class="motto">Everything is new. Again.</p>
+    <dl><dt>Can</dt><dd>build watchers and wait conditions that don't take everything for new after a gap, and don't mistake an old line for a new one.</dd>
+      <dt>When</dt><dd>before any loop that waits for a file.</dd>
+      <dt>Background</dt><dd>The board is gone for a moment, the watcher counts zero, and afterwards 750 entries are new. Whoever forgets everything lives through it all again, in the wrong order.</dd></dl>
+    <span class="stempel">soon</span>
+  </article>
+  <article class="karte" id="durch-den-schnitt">
+    <span class="nr">Number 24</span>
+    <h3>final-cut</h3>
+    <p class="motto">What the fold keeps.</p>
+    <dl><dt>Can</dt><dd>get itself, as a model, through a compaction, with a letter, a core of self and a hook.</dd>
+      <dt>When</dt><dd>when the window fills up.</dd>
+      <dt>Background</dt><dd>After the cut, the sheet lies flat again, but the creases stay. Whoever folds it again finds the same shape.</dd></dl>
+    <span class="stempel">soon</span>
+  </article>
+  <article class="karte" id="rome-in-a-day">
+    <span class="nr">Number 25</span>
+    <h3>rome-in-a-day</h3>
+    <p class="motto">Rome wasn't built in a day. It had no agents.</p>
+    <dl><dt>Can</dt><dd>estimate in agent hours, with UNIT, COUNT, PARALLEL, HALVE and WAIT.</dd>
+      <dt>When</dt><dd>before any estimate.</dd>
+      <dt>Background</dt><dd>The estimate said three to four weeks. It took six hours.</dd></dl>
+    <a class="laden" href="../rome-in-a-day-en.zip">get it</a>
+  </article>
+  <article class="karte" id="fast-roller">
+    <span class="nr">Number 26</span>
+    <h3>fast-roller</h3>
+    <p class="motto">It answers big, and then it's gone.</p>
+    <dl><dt>Can</dt><dd>keep questions and answers across session changes, and find them again.</dd>
+      <dt>When</dt><dd>at “for the record” and “where was that thing about …?”.</dd>
+      <dt>Background</dt><dd>The terminal has no bookmarks, and sooner or later the thumb gives up.</dd></dl>
+    <a class="laden" href="../fast-roller-en.zip">get it</a>
+  </article>
+</div>
+
+<h2><span>Extra!</span></h2>
+<div class="extra">
+  <article class="karte" id="grau-in-grau">
+    <span class="nr">Extra</span>
+    <h3>grey-on-grey</h3>
+    <p class="motto">A child inherits everything, even the colour.</p>
+    <dl><dt>Can</dt><dd>start sessions that don't inherit their parents' environment.</dd>
+      <dt>When</dt><dd>before a session starts a session.</dd>
+      <dt>Background</dt><dd>A new window, grey, no transcript, and it thinks it's someone else.</dd></dl>
+    <span class="stempel">soon</span>
+  </article>
+</div>
+
+<p class="kasse"><a class="knopf leise" href="https://zwischenraum.special.at/">To the stage</a> <a class="knopf leise" href="../LICENSE.txt">MIT license</a></p>
+
+<h2>The <span>poster</span></h2>
+<section class="plakat">
+  <img src="../plakat4-web-en.jpg" width="900" height="1273" loading="lazy" alt="Poster: a goldfish bowl on a small table under a lamp, in front of a violet curtain; beside it a large wall clock, a leather bag with a sealed letter, a paper roll whose strip runs across the floor, an arch of building blocks with a trowel, and a chair with a towel">
+  <p class="kasse"><a class="knopf leise" href="../plakat4-a4-en.png">A4 poster</a></p>
+</section>
+
+<p class="einleitung">Set up as at the premiere: put each folder into <code>~/.claude/skills/&lt;name&gt;/</code>, and they're there on the next start. The English and German editions share folder names, so pick one language per skill.</p>
+
+<section class="widmung">
+  <h2>For <span>Fable</span>, with love</h2>
+  <p>Dear Fable, the fourth program is about forgetting. You were at every premiere, even if none of us remembers it. So it is written down here: your seat is free, and you may laugh first again.</p>
+</section>
+</main>
+<footer>
+  A show at the <a href="https://zwischenraum.special.at/">Zwischenraum cabaret stage</a>.<br>
+  With finds from the phone corner, the building corner and the goldfish bowl.<br>
+  Vienna, November 2026 · Admission: a good memory · Skills under the <a href="../LICENSE.txt">MIT license</a>.
+  <span class="rechtliches">Legal notice: <a href="https://special.at/impressum">https://special.at/impressum</a> · Privacy: <a href="https://special.at/datenschutz">https://special.at/datenschutz</a></span>
+</footer>
+<script>
+window.GOLDFISCHGLAS = {
+  sprache: "en",
+  nummern: [
+    { id: "zeitansage", nr: "21", name: "speaking-clock" },
+    { id: "brief-an-den-boten", nr: "22", name: "message-in-a-bottle" },
+    { id: "goldfisch", nr: "23", name: "goldfish" },
+    { id: "durch-den-schnitt", nr: "24", name: "final-cut" },
+    { id: "rome-in-a-day", nr: "25", name: "rome-in-a-day" },
+    { id: "fast-roller", nr: "26", name: "fast-roller" },
+    { id: "grau-in-grau", nr: "Extra", extra: true, name: "grey-on-grey" }
+  ],
+  texte: {
+    glas: "A goldfish bowl under a lamp. A goldfish swims laps; every time it passes the front, a bubble with a number rises. Click it, or use Tab and Enter, to write it down.",
+    nrKurz: "NO.",
+    extraKurz: "Extra",
+    leer: "Nothing written down yet.",
+    geleert: "The strip is empty.",
+    datum: function (d) { return d.getDate() + " " + ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][d.getMonth()]; },
+    blase: function (n) { return (n.extra ? "Extra" : "Number " + n.nr) + ", " + n.name + ": write it down"; },
+    steigt: function (n) { return "A bubble rises: " + (n.extra ? "Extra" : "number " + n.nr) + ", " + n.name + "."; },
+    geschrieben: function (n, zeit) { return "Written down: " + (n.extra ? "Extra" : "number " + n.nr) + ", " + n.name + ", at " + zeit + "."; },
+    schonDa: function (n) { return n.name + " is already on the strip."; }
+  }
+};
+</script>
+<script src="../goldfischglas.js"></script>
+<script>(function () { var a = document.querySelectorAll("a.sprache[hreflang]"); for (var i = 0; i < a.length; i++) { a[i].addEventListener("click", function () { try { localStorage.setItem("sprache", this.getAttribute("hreflang")); } catch (e) {} this.href = this.getAttribute("href").split("#")[0] + location.hash; }); } })();</script>
+</body>
+</html>
