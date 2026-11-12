@@ -1,7 +1,7 @@
 ---
 name: fast-roller
 description: 'Fast Roller – Don''t Forget Me. Legt Fragen des Menschen samt Antworten der Sitzung sauber korrigiert in Tagesdateien ab und findet sie wieder. Anwenden bei "fürs Protokoll", "okay, für das Protokoll", "Protokoll", "schreib das mit", "notier das", "merk dir das für mich", "Fast Roller", "Fast Roller an", "Fast Roller aus", und beim Wiederfinden: "was hab ich dich gefragt?", "wo war das mit ...?", "zeig mir meine Fragen von heute", "offene Fragen", "erledigt". Funktioniert in jeder Sitzung und Rolle. Teil von „Macht''s gut, und danke für die Skills“, dem vierten Programm. Optional, kein Pflichtprogramm.'
-version: 1.0.0
+version: 1.0.1
 ---
 
 # Fast Roller

@@ -1,7 +1,7 @@
 ---
 name: fast-roller
 description: Fast Roller – Don't Forget Me. Files the human's questions together with the session's answers, lightly cleaned up, in one file per day, and finds them again. Use on "for the record", "okay, for the record", "write this down", "note that", "remember this for me", "Fast Roller", "Fast Roller on", "Fast Roller off", and when looking things up, "what did I ask you?", "where was that about ...?", "show me today's questions", "open questions", "done". The same in German, "fürs Protokoll", "für das Protokoll", "schreib das mit", "notier das", "Fast Roller an", "Fast Roller aus", "wo war das mit ...?", "was hab ich dich gefragt?", "offene Fragen", "erledigt". Works in any session and role. Part of So Long, and Thanks for All the Skills, the fourth program. Optional, not required.
-version: 1.0.0
+version: 1.0.1
 ---
 
 # Fast Roller

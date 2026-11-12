@@ -48,7 +48,7 @@ class Sperre:
                 fd = os.open(self.pfad, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
                 os.close(fd)
                 return self
-            except FileExistsError:
+            except (FileExistsError, PermissionError):  # Windows-Freigaben melden belegte Sperre teils als PermissionError (Falzbein 12.11.)
                 try:
                     if time.time() - os.path.getmtime(self.pfad) > 20:
                         os.unlink(self.pfad)  # verwaiste Sperre
