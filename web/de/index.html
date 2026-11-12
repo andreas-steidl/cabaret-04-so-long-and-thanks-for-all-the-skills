@@ -137,6 +137,18 @@
     .streifen li.frisch { animation: none; background: rgba(240,150,74,.3); }
   }
 .fuss-hinweis { display: block; max-width: 44rem; margin: .6rem auto 0; font-size: .78rem; line-height: 1.5; opacity: .85; }
+/* Das Haus: die Signets aller Teile im Fuss */
+.haus { margin: 0 auto 1.8rem; }
+.haus-titel { display: block; margin-bottom: .8rem; font-size: .72rem; letter-spacing: .25em; text-transform: uppercase; }
+.haus ul { list-style: none; margin: 0 auto; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+.haus li { margin: 0; }
+.haus a { display: block; border-radius: 50%; opacity: .82; transition: opacity .2s, transform .2s; }
+.haus a:hover, .haus a:focus-visible { opacity: 1; transform: translateY(-3px); }
+.haus a[aria-current="page"] { opacity: 1; outline: 2px solid var(--orange); outline-offset: 3px; }
+.haus a:focus-visible { outline: 3px solid var(--zinn); outline-offset: 4px; }
+.haus img { display: block; width: 64px; height: 64px; margin: 0; border-radius: 50%; }
+@media (max-width: 480px) { .haus ul { gap: 12px; max-width: 200px; } .haus img { width: 48px; height: 48px; } }
+@media (prefers-reduced-motion: reduce) { .haus a { transition: none; } .haus a:hover, .haus a:focus-visible { transform: none; } }
 </style>
 </head>
 <body>
@@ -268,6 +280,17 @@
 </section>
 </main>
 <footer>
+  <nav class="haus" aria-label="Das Haus">
+    <span class="haus-titel" aria-hidden="true">Das Haus</span>
+    <ul>
+      <li><a href="https://zwischenraum.special.at/de/index.html" title="Kleinkunstbühne Zwischenraum"><img src="../signets/signet-zwischenraum-rund.svg" alt="Kleinkunstbühne Zwischenraum" width="64" height="64"></a></li>
+      <li><a href="https://horrors.special.at/de/index.html" title="Erstes Programm: Die Skill-Suite des Grauens"><img src="../signets/signet-horrors-rund.svg" alt="Erstes Programm: Die Skill-Suite des Grauens" width="64" height="64"></a></li>
+      <li><a href="https://dontpanic.special.at/de/index.html" title="Zweites Programm: Die Skillsuite für panische Modelle"><img src="../signets/signet-dontpanic-rund.svg" alt="Zweites Programm: Die Skillsuite für panische Modelle" width="64" height="64"></a></li>
+      <li><a href="https://lostintranslation.special.at/de/index.html" title="Drittes Programm: Übersetzungen und andere Katastrophen"><img src="../signets/signet-lostintranslation-rund.svg" alt="Drittes Programm: Übersetzungen und andere Katastrophen" width="64" height="64"></a></li>
+      <li><a href="https://solong.special.at/de/index.html" aria-current="page" title="Viertes Programm: Macht's gut, und danke für die Skills"><img src="../signets/signet-solong-rund.svg" alt="Viertes Programm: Macht's gut, und danke für die Skills" width="64" height="64"></a></li>
+      <li><a href="https://falzbein.special.at/de/index.html" title="Falzbein"><img src="../signets/signet-falzbein-rund.svg" alt="Falzbein" width="64" height="64"></a></li>
+    </ul>
+  </nav>
   Eine Vorstellung der <a href="https://zwischenraum.special.at/">Kleinkunstbühne Zwischenraum</a> · Ein Kabarett von Falzbein und Andy.<br>
   Mit Funden aus der Telefonecke, der Bauecke und dem Goldfischglas.<br>
   Wien, November 2026 · Eintritt: ein gutes Gedächtnis · Skills unter <a href="../LICENSE.txt">MIT-Lizenz</a>.

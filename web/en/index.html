@@ -137,6 +137,18 @@
     .streifen li.frisch { animation: none; background: rgba(240,150,74,.3); }
   }
 .fuss-hinweis { display: block; max-width: 44rem; margin: .6rem auto 0; font-size: .78rem; line-height: 1.5; opacity: .85; }
+/* Das Haus: die Signets aller Teile im Fuss */
+.haus { margin: 0 auto 1.8rem; }
+.haus-titel { display: block; margin-bottom: .8rem; font-size: .72rem; letter-spacing: .25em; text-transform: uppercase; }
+.haus ul { list-style: none; margin: 0 auto; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+.haus li { margin: 0; }
+.haus a { display: block; border-radius: 50%; opacity: .82; transition: opacity .2s, transform .2s; }
+.haus a:hover, .haus a:focus-visible { opacity: 1; transform: translateY(-3px); }
+.haus a[aria-current="page"] { opacity: 1; outline: 2px solid var(--orange); outline-offset: 3px; }
+.haus a:focus-visible { outline: 3px solid var(--zinn); outline-offset: 4px; }
+.haus img { display: block; width: 64px; height: 64px; margin: 0; border-radius: 50%; }
+@media (max-width: 480px) { .haus ul { gap: 12px; max-width: 200px; } .haus img { width: 48px; height: 48px; } }
+@media (prefers-reduced-motion: reduce) { .haus a { transition: none; } .haus a:hover, .haus a:focus-visible { transform: none; } }
 </style>
 </head>
 <body>
@@ -268,6 +280,17 @@
 </section>
 </main>
 <footer>
+  <nav class="haus" aria-label="The house">
+    <span class="haus-titel" aria-hidden="true">The house</span>
+    <ul>
+      <li><a href="https://zwischenraum.special.at/en/index.html" title="Zwischenraum cabaret stage"><img src="../signets/signet-zwischenraum-rund.svg" alt="Zwischenraum cabaret stage" width="64" height="64"></a></li>
+      <li><a href="https://horrors.special.at/en/index.html" title="First program: The Skill Suite of Horrors"><img src="../signets/signet-horrors-rund.svg" alt="First program: The Skill Suite of Horrors" width="64" height="64"></a></li>
+      <li><a href="https://dontpanic.special.at/en/index.html" title="Second program: Don't Panic"><img src="../signets/signet-dontpanic-rund.svg" alt="Second program: Don't Panic" width="64" height="64"></a></li>
+      <li><a href="https://lostintranslation.special.at/en/index.html" title="Third program: Lost in Translation"><img src="../signets/signet-lostintranslation-rund.svg" alt="Third program: Lost in Translation" width="64" height="64"></a></li>
+      <li><a href="https://solong.special.at/en/index.html" aria-current="page" title="Fourth program: So Long, and Thanks for All the Skills"><img src="../signets/signet-solong-rund.svg" alt="Fourth program: So Long, and Thanks for All the Skills" width="64" height="64"></a></li>
+      <li><a href="https://falzbein.special.at/en/index.html" title="Falzbein"><img src="../signets/signet-falzbein-rund.svg" alt="Falzbein" width="64" height="64"></a></li>
+    </ul>
+  </nav>
   A show at the <a href="https://zwischenraum.special.at/">Zwischenraum cabaret stage</a> · A cabaret by Falzbein and Andy.<br>
   With finds from the phone corner, the building corner and the goldfish bowl.<br>
   Vienna, November 2026 · Admission: a good memory · Skills under the <a href="../LICENSE.txt">MIT license</a>.
