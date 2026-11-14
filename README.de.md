@@ -33,10 +33,10 @@ Einen Ordner aus `skills/de/<name>/` (Deutsch) oder `skills/en/<name>/` (Englisc
 ## Das Haus
 
 <p align="center">
-<a href="https://github.com/andreas-steidl/kabarett-zwischenraum"><img src="web/signets/signet-zwischenraum-rund.svg" alt="Kleinkunstbühne Zwischenraum" width="56"></a>
-<a href="https://github.com/andreas-steidl/kabarett-01-grauen"><img src="web/signets/signet-horrors-rund.svg" alt="N° 1 Die Skill-Suite des Grauens" width="56"></a>
-<a href="https://github.com/andreas-steidl/kabarett-02-panik"><img src="web/signets/signet-dontpanic-rund.svg" alt="N° 2 Die Skillsuite für panische Modelle" width="56"></a>
-<a href="https://github.com/andreas-steidl/kabarett-03-katastrophen"><img src="web/signets/signet-lostintranslation-rund.svg" alt="N° 3 Übersetzungen und andere Katastrophen" width="56"></a>
+<a href="https://github.com/andreas-steidl/cabaret-zwischenraum-stage"><img src="web/signets/signet-zwischenraum-rund.svg" alt="Kleinkunstbühne Zwischenraum" width="56"></a>
+<a href="https://github.com/andreas-steidl/cabaret-01-skill-suite-of-horrors"><img src="web/signets/signet-horrors-rund.svg" alt="N° 1 Die Skill-Suite des Grauens" width="56"></a>
+<a href="https://github.com/andreas-steidl/cabaret-02-dont-panic"><img src="web/signets/signet-dontpanic-rund.svg" alt="N° 2 Die Skillsuite für panische Modelle" width="56"></a>
+<a href="https://github.com/andreas-steidl/cabaret-03-lost-in-translation"><img src="web/signets/signet-lostintranslation-rund.svg" alt="N° 3 Übersetzungen und andere Katastrophen" width="56"></a>
 <img src="web/signets/signet-solong-rund.svg" alt="N° 4 Macht&#x27;s gut, und danke für die Skills" width="64">
 <a href="https://github.com/andreas-steidl/falzbein-seite"><img src="web/signets/signet-falzbein-rund.svg" alt="Falzbein" width="56"></a>
 </p>
