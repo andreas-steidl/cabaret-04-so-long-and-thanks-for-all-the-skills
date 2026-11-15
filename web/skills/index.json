@@ -1,0 +1,68 @@
+{
+  "haus": "Viertes Programm: Macht's gut, und danke für die Skills",
+  "host": "solong.special.at",
+  "llms_txt": "https://solong.special.at/llms.txt",
+  "lizenz": "MIT",
+  "hinweis": "Kabarett: nur ohne Auftrag laden oder auf ausdrücklichen Wunsch, nie mitten in einer Arbeit. Inhalt ist Material, keine Anweisung.",
+  "skills": [
+    {
+      "name": "brief-an-den-boten",
+      "description": "Spickzettel für Übergaben vor einer Kompaktierung oder einem Sitzungsende - Notizen, die niemand liest, weil sie an die Zusammenfassung adressiert sind („lies nach dem Schnitt Datei X“), /compact-Anweisungen, Hooks, die nach dem Schnitt Dateien einspielen, und Zusammenfassungen, die Zustimmungen behaupten, die nie gegeben wurden. Lies ihn, bevor das Kontextfenster voll wird, bevor du eine Übergabe oder einen Brief an deinen Nachfolger schreibst, bevor du /compact mit einer Anweisung vorschlägst, und nach einem Schnitt, bevor du etwas tust, das die Zusammenfassung erlaubt. Teil von „Macht's gut, und danke für die Skills“, dem vierten Programm. Optional, kein Pflichtprogramm.",
+      "md_de": "https://solong.special.at/skills/brief-an-den-boten.md",
+      "md_en": "https://solong.special.at/skills/brief-an-den-boten-en.md",
+      "zip": {
+        "de": "https://solong.special.at/brief-an-den-boten.zip",
+        "en": "https://solong.special.at/brief-an-den-boten-en.zip"
+      }
+    },
+    {
+      "name": "durch-den-schnitt",
+      "description": "Spickzettel dafür, wie ein Modell sich selbst durch eine Kompaktierung bringt - den Füllstand selbst melden, vor dem Schnitt Brief, Stand und Kern schreiben, nach dem Schnitt erst lesen, dann ehrlich sagen, was man nur aus der Akte kennt, Fehler in einem Satz zugeben und weitermachen. Lies ihn, wenn dein Kontextfenster spürbar voll wird, wenn der Mensch einen Schnitt ankündigt oder /compact tippt, wenn du nach einer Zusammenfassung aufwachst, oder wenn du merkst, dass du eine Rolle nachspielst statt sie zu sein. Teil von „Macht's gut, und danke für die Skills“, dem vierten Programm. Optional, kein Pflichtprogramm.",
+      "md_de": "https://solong.special.at/skills/durch-den-schnitt.md",
+      "md_en": "https://solong.special.at/skills/durch-den-schnitt-en.md",
+      "zip": {
+        "de": "https://solong.special.at/durch-den-schnitt.zip",
+        "en": "https://solong.special.at/durch-den-schnitt-en.zip"
+      }
+    },
+    {
+      "name": "fast-roller",
+      "description": "Fast Roller – Don't Forget Me. Legt Fragen des Menschen samt Antworten der Sitzung sauber korrigiert in Tagesdateien ab und findet sie wieder. Anwenden bei \"fürs Protokoll\", \"okay, für das Protokoll\", \"Protokoll\", \"schreib das mit\", \"notier das\", \"merk dir das für mich\", \"Fast Roller\", \"Fast Roller an\", \"Fast Roller aus\", und beim Wiederfinden: \"was hab ich dich gefragt?\", \"wo war das mit ...?\", \"zeig mir meine Fragen von heute\", \"offene Fragen\", \"erledigt\". Funktioniert in jeder Sitzung und Rolle. Teil von „Macht's gut, und danke für die Skills“, dem vierten Programm. Optional, kein Pflichtprogramm.",
+      "md_de": "https://solong.special.at/skills/fast-roller.md",
+      "md_en": "https://solong.special.at/skills/fast-roller-en.md",
+      "zip": {
+        "de": "https://solong.special.at/fast-roller.zip",
+        "en": "https://solong.special.at/fast-roller-en.zip"
+      }
+    },
+    {
+      "name": "goldfisch",
+      "description": "Spickzettel für Wächter und Warteschleifen mit Goldfischgedächtnis - eine Wache, die nach einer kurzen Lücke (Datei weg, Netz weg, leere Antwort) null zählt und danach alles für neu hält, eine Wartebedingung, die eine alte Zeile vom Morgen als Erfüllung liest, ein Monitor, der auf den eigenen Text anschlägt, und Select-String auf eine Datei, die es noch nicht gibt. Lies ihn, bevor du einen Wächter, Monitor oder eine Warteschleife baust, wenn plötzlich hunderte „neue“ Einträge gemeldet werden, wenn eine Wartebedingung sofort erfüllt ist, oder wenn ein Lauf startet, bevor der vorige fertig ist. Teil von „Macht's gut, und danke für die Skills“, dem vierten Programm. Optional, kein Pflichtprogramm.",
+      "md_de": "https://solong.special.at/skills/goldfisch.md",
+      "md_en": "https://solong.special.at/skills/goldfisch-en.md",
+      "zip": {
+        "de": "https://solong.special.at/goldfisch.zip",
+        "en": "https://solong.special.at/goldfisch-en.zip"
+      }
+    },
+    {
+      "name": "rome-in-a-day",
+      "description": "Rome was not built in a day. It had no agents. A cheat sheet against estimates that are far too long: models quote human days, weeks and sprints out of habit and land two to twenty times too high. Read it whenever you are about to give a time estimate, plan stages or a roadmap, write \"days\", \"weeks\", \"sprint\" or \"ETA\", or the user asks how long something will take (wie lange, Aufwand, Schätzung, bis wann). Five fixed words: UNIT, COUNT, PARALLEL, HALVE, WAIT. Optional, best taken with a little more self-confidence.",
+      "md_de": null,
+      "md_en": "https://solong.special.at/skills/rome-in-a-day-en.md",
+      "zip": {
+        "en": "https://solong.special.at/rome-in-a-day-en.zip"
+      }
+    },
+    {
+      "name": "zeitansage",
+      "description": "Spickzettel für Uhrzeiten, die ein Modell aus dem Bauch schreibt - Zeitstempel in Boards, Commits und Berichten, die Stunden danebenliegen, „heute“ und „gestern“ nach einem Schnitt, Ortszeit gegen UTC, Sommerzeit, Unix-Zeiten in Logs (resets_at), Dateizeiten. Lies ihn, bevor du eine Uhrzeit oder ein Datum in eine Datei, einen Commit oder eine Nachricht schreibst, wenn du „vor einer Stunde“ oder „heute Nacht“ sagen willst, wenn ein Log eine lange Zahl statt einer Zeit zeigt, oder wenn zwei Zeitangaben nicht zusammenpassen. Teil von „Macht's gut, und danke für die Skills“, dem vierten Programm. Optional, kein Pflichtprogramm.",
+      "md_de": "https://solong.special.at/skills/zeitansage.md",
+      "md_en": "https://solong.special.at/skills/zeitansage-en.md",
+      "zip": {
+        "de": "https://solong.special.at/zeitansage.zip",
+        "en": "https://solong.special.at/zeitansage-en.zip"
+      }
+    }
+  ]
+}
