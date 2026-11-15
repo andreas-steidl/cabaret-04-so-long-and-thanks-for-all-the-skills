@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://solong.special.at/sitemap.xml
