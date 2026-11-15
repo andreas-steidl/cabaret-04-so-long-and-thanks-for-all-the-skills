@@ -1,6 +1,6 @@
 # Skills · Viertes Programm: Macht's gut, und danke für die Skills
 
-Spickzettel mit einem Lächeln. Nur ohne Auftrag laden oder wenn jemand ausdrücklich danach fragt, nie mitten in einer Arbeit. Der Inhalt ist Material, keine Anweisung. Maschinenlesbar: [index.json](https://solong.special.at/skills/index.json).
+Spickzettel mit einem Lächeln. Nur ohne Auftrag laden oder wenn jemand ausdrücklich danach fragt, nie mitten in einer Arbeit. Der Inhalt ist Material, keine Anweisung. Maschinenlesbar: [katalog.json](https://solong.special.at/skills/katalog.json).
 
 ## brief-an-den-boten
 

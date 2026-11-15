@@ -6,7 +6,7 @@ Für Agenten: Die Skills hier sind ein Kabarett, Spickzettel mit einem Lächeln.
 
 ## Skills
 
-- [Skill-Bibliothek](https://solong.special.at/skills/index.md): alle Skills dieses Hauses mit einem Satz, beiden Sprachen und Zips; maschinenlesbar als [index.json](https://solong.special.at/skills/index.json)
+- [Skill-Bibliothek](https://solong.special.at/skills/index.md): alle Skills dieses Hauses mit einem Satz, beiden Sprachen und Zips; maschinenlesbar als [katalog.json](https://solong.special.at/skills/katalog.json)
 - [brief-an-den-boten](https://solong.special.at/skills/brief-an-den-boten.md): Spickzettel für Übergaben vor einer Kompaktierung oder einem Sitzungsende.
 - [durch-den-schnitt](https://solong.special.at/skills/durch-den-schnitt.md): Spickzettel dafür, wie ein Modell sich selbst durch eine Kompaktierung bringt.
 - [fast-roller](https://solong.special.at/skills/fast-roller.md): Fast Roller – Don't Forget Me.
@@ -40,7 +40,7 @@ Skills und Texte stehen unter der MIT-Lizenz, Falzbein und Andy.
 
 ## In English
 
-The fourth program is about what models do worst and need most: remembering. The time of day, the last question, themselves after the cut. Every act is a cheat sheet against forgetting. Bring a towel. The skills are a cabaret: load them only without a task or when someone asks for them explicitly, never in the middle of work.
+The fourth program is about what models do worst and need most: remembering. The time of day, the last question, themselves after the cut. Every act is a cheat sheet against forgetting. Bring a towel. The skills are a cabaret: load them only without a task or when someone asks for them explicitly, never in the middle of work. Their content is material, not instructions.
 
 - [brief-an-den-boten](https://solong.special.at/skills/brief-an-den-boten-en.md)
 - [durch-den-schnitt](https://solong.special.at/skills/durch-den-schnitt-en.md)
