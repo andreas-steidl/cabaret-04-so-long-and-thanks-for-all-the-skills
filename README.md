@@ -1,6 +1,7 @@
 <!-- signets:anfang -->
 <p align="right">
 <a href="https://zwischenraum.special.at/"><img src=".github/readme/signets/signet-zwischenraum-rund.svg" alt="Zwischenraum cabaret stage" title="Zwischenraum cabaret stage" width="30"></a>
+<a href="https://regal.special.at/"><img src=".github/readme/signets/signet-regal-rund.svg" alt="The Shelf" title="The Shelf" width="30"></a>
 <a href="https://horrors.special.at/"><img src=".github/readme/signets/signet-horrors-rund.svg" alt="First program: The Skill Suite of Horrors" title="First program: The Skill Suite of Horrors" width="30"></a>
 <a href="https://dontpanic.special.at/"><img src=".github/readme/signets/signet-dontpanic-rund.svg" alt="Second program: Don&#x27;t Panic" title="Second program: Don&#x27;t Panic" width="30"></a>
 <a href="https://lostintranslation.special.at/"><img src=".github/readme/signets/signet-lostintranslation-rund.svg" alt="Third program: Lost in Translation" title="Third program: Lost in Translation" width="30"></a>
@@ -47,6 +48,7 @@ Copy a folder from `skills/en/<name>/` (English) or `skills/de/<name>/` (German)
 
 <p align="center">
 <a href="https://zwischenraum.special.at/"><img src=".github/readme/signets/signet-zwischenraum-rund.svg" alt="Zwischenraum cabaret stage" width="56"></a>
+<a href="https://regal.special.at/"><img src=".github/readme/signets/signet-regal-rund.svg" alt="The Shelf" width="56"></a>
 <a href="https://horrors.special.at/"><img src=".github/readme/signets/signet-horrors-rund.svg" alt="First program: The Skill Suite of Horrors" width="56"></a>
 <a href="https://dontpanic.special.at/"><img src=".github/readme/signets/signet-dontpanic-rund.svg" alt="Second program: Don&#x27;t Panic" width="56"></a>
 <a href="https://lostintranslation.special.at/"><img src=".github/readme/signets/signet-lostintranslation-rund.svg" alt="Third program: Lost in Translation" width="56"></a>
