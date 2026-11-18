@@ -6,3 +6,6 @@ Thumbs.db
 # Druckdateien und hochgerechnete Bilder: nur auf dem NAS und auf Elements, nie nach GitHub
 plakat/druck/
 plakat/*_x2.png
+
+# Die Webseite liegt online (Mira laedt sie aus web/ hoch); seit 18.11.2026 nicht mehr im Repo (Andy)
+web/
